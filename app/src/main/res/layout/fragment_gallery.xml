@@ -4,86 +4,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/na_rlcs_standings_table">
+            android:id="@+id/na_rlcs_standings_table"
+            app:layout_constraintTop_toTopOf="parent"
+            android:theme="@style/TableStyle">
             <TableRow>
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="@string/standings_text"
-                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/teams_text"
+                    />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/records_text"
                     />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                    />
+                <TextView
+                    />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                    />
+                <TextView
+                    />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                />
+                <TextView
+                    />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                    />
+                <TextView
+                    />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                    />
+                <TextView
+                    />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                    />
+                <TextView
+                    />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                    />
+                <TextView
+                    />
             </TableRow>
 
             <TableRow>
                 <TextView
                     />
-
+                <TextView
+                    />
+                <TextView
+                    />
             </TableRow>
 
         </TableLayout>
-
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

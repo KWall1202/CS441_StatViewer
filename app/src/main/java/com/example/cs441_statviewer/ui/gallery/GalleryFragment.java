@@ -27,19 +27,13 @@ public class GalleryFragment extends Fragment {
         galleryViewModel =
                 ViewModelProviders.of(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         final TableLayout NARLCSStandingsTable = root.findViewById(R.id.na_rlcs_standings_table);
         String[] NARLCSTeamNames = context.getResources().getStringArray(R.array.NA_RLCS_Teams);
         for(int i=1; i < NARLCSStandingsTable.getChildCount(); i++) {
             TableRow curRow = (TableRow) NARLCSStandingsTable.getChildAt(i);
-            TextView teamName = (TextView) curRow.getChildAt(0);
-
+            TextView placement = (TextView) curRow.getChildAt(0);
+            TextView teamName = (TextView) curRow.getChildAt(1);
+            placement.setText(Integer.toString(i));
             teamName.setText(NARLCSTeamNames[i-1]);
         }
         return root;
