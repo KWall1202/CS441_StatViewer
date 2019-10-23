@@ -19,13 +19,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_costraintTop_toTopOf="parent"
-        >
+        android:layout_height="wrap_content">
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/na_rlcs_standings_table">
             <TableRow>
                 <TextView
                     android:layout_height="wrap_content"
@@ -41,7 +40,47 @@
 
             </TableRow>
 
+            <TableRow>
+                <TextView
+                    />
 
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    />
+
+            </TableRow>
 
         </TableLayout>
 
