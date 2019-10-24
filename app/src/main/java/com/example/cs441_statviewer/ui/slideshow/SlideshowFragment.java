@@ -12,6 +12,12 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.cs441_statviewer.R;
 
 public class SlideshowFragment extends Fragment {
@@ -30,6 +36,28 @@ public class SlideshowFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        // Create array of teams
+        // Create array of ELO ratings
+        String url = getContext().getResources().getString(R.string.elo_url);
+        RequestQueue queue = Volley.newRequestQueue(getContext());
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                // Parse response
+                textView.setText("Response is: " + response.substring(0,500));
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // Handle error
+                textView.setText("Oops! Errored out");
+            }
+        });
+
+        queue.add(stringRequest);
+
         return root;
     }
 }

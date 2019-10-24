@@ -16,6 +16,8 @@
     <string name="standings_text">Current Standings</string>
     <string name="teams_text">Team</string>
     <string name="records_text">Series Record</string>
+    <string name="elo_text">ELO Rating</string>
+    <string name="region_text">Region</string>
 
     <string-array name="NA_RLCS_Teams">
         <item>Cloud9</item>
@@ -27,4 +29,6 @@
         <item>Rogue</item>
         <item>Birds N Bees</item>
     </string-array>
+
+    <string name="elo_url">https://www.mediawiki.org/w/api.php</string>
 </resources>
