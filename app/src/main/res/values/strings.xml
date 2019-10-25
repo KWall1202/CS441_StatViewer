@@ -30,5 +30,118 @@
         <item>Birds N Bees</item>
     </string-array>
 
-    <string name="elo_url">https://www.mediawiki.org/w/api.php</string>
+    <string-array name="global_top_50_teams">
+        <item>NRG Esports</item>
+        <item>Pittsburgh Knights</item>
+        <item>Team Reciprocity</item>
+        <item>G2 Esports</item>
+        <item>mousesports</item>
+        <item>FC Barcelona</item>
+        <item>Veloce Esports</item>
+        <item>Renault Vitality</item>
+        <item>Dignitas</item>
+        <item>Team SoloMid</item>
+        <item>Ghost Gaming</item>
+        <item>Rogue</item>
+        <item>Cloud9</item>
+        <item>Birds</item>
+        <item>Spacestation Gaming</item>
+        <item>Complexity Gaming</item>
+        <item>Bull Send</item>
+        <item>Lowkey Esports</item>
+        <item>Lotus</item>
+        <item>Renegades</item>
+        <item>Discombobulators</item>
+        <item>Afterthought</item>
+        <item>Chiefs Esports Club</item>
+        <item>Charlotte Phoenix</item>
+        <item>RBG Esports</item>
+        <item>Ground Zero Gaming</item>
+        <item>Flomp Resont</item>
+        <item>ARG</item>
+        <item>Baguette Squad</item>
+        <item>Team Vertex</item>
+        <item>INTZ eSports</item>
+        <item>Compadres</item>
+        <item>1 Bim 2 Bam</item>
+        <item>Nordavind</item>
+        <item>Method</item>
+    </string-array>
+
+    <string-array name="global_top_50_elos">
+        <item>3000</item>
+        <item>2869</item>
+        <item>2794</item>
+        <item>2794</item>
+        <item>2776</item>
+        <item>2746</item>
+        <item>2663</item>
+        <item>2640</item>
+        <item>2632</item>
+        <item>2588</item>
+        <item>2566</item>
+        <item>2521</item>
+        <item>2493</item>
+        <item>2424</item>
+        <item>2333</item>
+        <item>2247</item>
+        <item>2168</item>
+        <item>2161</item>
+        <item>2159</item>
+        <item>2122</item>
+        <item>2105</item>
+        <item>2102</item>
+        <item>2100</item>
+        <item>2097</item>
+        <item>2051</item>
+        <item>2042</item>
+        <item>2033</item>
+        <item>2017</item>
+        <item>2011</item>
+        <item>2003</item>
+        <item>1978</item>
+        <item>1959</item>
+        <item>1943</item>
+        <item>1929</item>
+        <item>1925</item>
+        <item>1913</item>
+    </string-array>
+
+    <string-array name="global_top_50_regions">
+        <item>NA</item>
+        <item>NA</item>
+        <item>EU</item>
+        <item>NA</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>NA</item>
+        <item>NA</item>
+        <item>NA</item>
+        <item>NA</item>
+        <item>NA</item>
+        <item>EU</item>
+        <item>NA</item>
+        <item>SAM</item>
+        <item>SAM</item>
+        <item>OCE</item>
+        <item>EU</item>
+        <item>NA</item>
+        <item>OCE</item>
+        <item>NA</item>
+        <item>NA</item>
+        <item>OCE</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>SAM</item>
+        <item>NA</item>
+        <item>EU</item>
+        <item>EU</item>
+        <item>EU</item>
+    </string-array>
 </resources>

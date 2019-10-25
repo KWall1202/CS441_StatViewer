@@ -1,9 +1,12 @@
 package com.example.cs441_statviewer.ui.slideshow;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -12,12 +15,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.cs441_statviewer.R;
 
 public class SlideshowFragment extends Fragment {
@@ -39,24 +36,37 @@ public class SlideshowFragment extends Fragment {
 
         // Create array of teams
         // Create array of ELO ratings
-        String url = getContext().getResources().getString(R.string.elo_url);
-        RequestQueue queue = Volley.newRequestQueue(getContext());
+        Context context = getContext();
+        String[] teams = context.getResources().getStringArray(R.array.global_top_50_teams);
+        String[] regions = context.getResources().getStringArray(R.array.global_top_50_regions);
+        String[] elos = context.getResources().getStringArray(R.array.global_top_50_elos);
+        TableLayout eloTable = root.findViewById(R.id.global_elo_table);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                // Parse response
-                textView.setText("Response is: " + response.substring(0,500));
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                // Handle error
-                textView.setText("Oops! Errored out");
-            }
-        });
+        ViewGroup.LayoutParams textViewParams = new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.MATCH_PARENT
+        );
 
-        queue.add(stringRequest);
+        for(int i=0; i < 1; i++) {
+            TableRow newRow = new TableRow(context);
+            TextView ranking = new TextView(context);
+            TextView teamName = new TextView(context);
+            TextView elo = new TextView(context);
+            TextView region = new TextView(context);
+            ranking.setText(Integer.toString(i+1));
+            ranking.setLayoutParams(textViewParams);
+            teamName.setText(teams[i]);
+            teamName.setLayoutParams(textViewParams);
+            region.setText(regions[i]);
+            region.setLayoutParams(textViewParams);
+            elo.setText(elos[i]);
+            elo.setLayoutParams(textViewParams);
+            newRow.addView(ranking);
+            newRow.addView(teamName);
+            newRow.addView(region);
+            newRow.addView(elo);
+            eloTable.addView(eloTable);
+        }
 
         return root;
     }
