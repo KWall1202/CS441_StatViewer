@@ -30,6 +30,7 @@
         <item>Birds N Bees</item>
     </string-array>
 
+    <string name="global_elo_title">Global Top Teams</string>
     <string-array name="global_top_50_teams">
         <item>NRG Esports</item>
         <item>Pittsburgh Knights</item>
