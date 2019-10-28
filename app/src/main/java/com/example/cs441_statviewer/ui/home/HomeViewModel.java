@@ -10,7 +10,11 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is the home page!\n" +
+                "This is a rocket league standings viewing app!\n" +
+                "You can view the global rankings on the global rankings page\n" +
+                "Or you can filter the rankings by region on the regional page\n" +
+                "Use the checkboxes below if you want to filter that table by multiple regions at once!");
     }
 
     public LiveData<String> getText() {

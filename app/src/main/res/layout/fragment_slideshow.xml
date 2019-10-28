@@ -32,7 +32,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/global_elo_table"
             app:layout_constraintTop_toTopOf="parent"
-            android:theme="@style/TableStyle">
+            android:theme="@style/TableStyle"
+            android:shrinkColumns="0,1,3"
+            android:stretchColumns="2">
 
             <TableRow>
                 <TextView

@@ -16,7 +16,6 @@
     <style name="TableStyle">
         <item name="android:textSize">@dimen/table_font_size</item>
         <item name="android:gravity">center</item>
-        <item name="android:shrinkColumns">*</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
